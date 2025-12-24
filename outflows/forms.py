@@ -28,4 +28,4 @@ class OutflowForm(forms.ModelForm):
 
             )
 
-            return quantity
+        return quantity

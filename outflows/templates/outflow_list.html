@@ -44,7 +44,7 @@ SGE - Saídas
                 <td>{{ outflow.quantity }}</td>
                 <td>{{ outflow.created_at }}</td>
                 <td style="white-space: nowrap;">
-                    <a href="{% url 'inflow_detail' outflow.id %}" class="btn btn-info btn-sm"><i class="bi bi-eye"></i></a>
+                    <a href="{% url 'outflow_detail' outflow.id %}" class="btn btn-info btn-sm"><i class="bi bi-eye"></i></a>
                 </td>
             </tr>
             {% endfor %}
