@@ -48,7 +48,7 @@ class SupplierDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView
     model = models.Supplier
     template_name = 'supplier_delete.html'
     success_url = reverse_lazy('supplier_list')
-    permission_required  = 'suppliers.delete_supplier'
+    permission_required = 'suppliers.delete_supplier'
 
 
 class SupplierCreateListAPIView(ListCreateAPIView):

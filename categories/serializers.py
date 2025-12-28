@@ -3,7 +3,7 @@ from . import models
 
 
 class CategorySerializer(ModelSerializer):
-    
+
     class Meta:
         model = models.Category
         fields = '__all__'
