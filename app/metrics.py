@@ -40,8 +40,12 @@ def get_sales_metrics():
         ]
         or 0
     )
-    total_sales_value = sum(outflow.product.selling_price for outflow in outflows)
-    total_sales_cost = sum(outflow.product.cost_price for outflow in outflows)
+    total_sales_value = sum(
+        outflow.product.selling_price * outflow.quantity for outflow in outflows
+    )
+    total_sales_cost = sum(
+        outflow.product.cost_price * outflow.quantity for outflow in outflows
+    )
     total_sales_profit = total_sales_value - total_sales_cost or 0
 
     return dict(
